@@ -1,5 +1,5 @@
 # thorlabs_CS165MU1
-Python device adaptor: Thorlabs CS165MU1 Zelux 1.6 MP Monochrome CMOS Camera
+Python device adaptor: Thorlabs CS165MU1 Zelux 1.6 MP Monochrome CMOS Camera.
 ## Quick start:
 - Install the "ThorCam" GUI (from Thorlabs) and check the camera. It should be 
 straightforward run live mode and save an image etc.
