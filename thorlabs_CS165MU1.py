@@ -739,7 +739,14 @@ if __name__ == '__main__':
         print("latency (ms) = %0.6f"%latency_ms)
         print("shape of images:", images.shape)
         if i == 0: imwrite('test3.tif', images, imagej=True)
+        print("min image values: %s"%images.min(axis=(1, 2)))
+        print("max image values: %s"%images.max(axis=(1, 2)))
+        n_blank = frames - np.count_nonzero(images.max(axis=(1, 2)))
+        if n_blank > 0:
+            blank_frames += n_blank
+            print('%d blank frames received...'%n_blank)
     average_latency_ms = total_latency_ms / iterations
+    print("\n -> total blank frames received = %i"%blank_frames)
     print(" -> average latency (ms) = %0.6f"%average_latency_ms) # ~3ms typical
 
     camera.close()
