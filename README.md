@@ -6,6 +6,8 @@ straightforward run live mode and save an image etc.
 - Download this repository and run "thorlabs_CS165MU1.py" with essential the .dll
 files in the same folder (copies included here for convenience).
 
+**Note:** Using the PC (e.g. web browsing) while recording to memory can trigger "LOST FRAME TIMEOUT!" if the PC can't keep up with the camera. So it's best to leave the computer alone if running an important acquisition.
+
 ![social_preview](https://github.com/amsikking/thorlabs_CS165MU1/blob/main/social_preview.png)
 
 ## Details:
